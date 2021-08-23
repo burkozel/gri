@@ -1,23 +1,16 @@
 class LIFO(list):
-
     def __init__(self):
         super().__init__(self)
-
     def size(self):
         return len(self)
-
     def is_empty(self):
         return self.size() < 1
-
     def push(self, item):
         self.append(item)
-
     def pop(self):
         super().pop(self.size() - 1)
-
     def peek(self):
         return self[self.size() - 1]
-
 
 def check_balance(str):
     #Постоянные
